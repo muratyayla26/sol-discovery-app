@@ -24,7 +24,7 @@ const ClusterSelect = () => {
   };
 
   return (
-    <FormControl variant="filled" sx={{ width: 188 }}>
+    <FormControl variant="filled" sx={{ width: 203 }}>
       <InputLabel htmlFor="network-select-item" sx={{ color: "text.primary" }}>
         Network
       </InputLabel>
@@ -35,7 +35,7 @@ const ClusterSelect = () => {
         onChange={handleFilterChange}
         size="small"
       >
-        <MenuItem value={ClusterTypes.Mainnet}>Mainnet</MenuItem>
+        <MenuItem value={ClusterTypes.Mainnet}>Mainnet Beta</MenuItem>
         <MenuItem value={ClusterTypes.Devnet}>Devnet</MenuItem>
       </Select>
     </FormControl>
