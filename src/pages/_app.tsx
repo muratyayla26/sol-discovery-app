@@ -7,7 +7,6 @@ import { CssBaseline } from "@mui/material";
 import theme from "@/utils/theme";
 import Layout from "@/components/layout";
 import Head from "next/head";
-import WalletProviderContext from "@/context/WalletProviderContext";
 import NProgress from "nprogress";
 import "@/styles/globals.scss";
 
@@ -40,12 +39,10 @@ export default function App({ Component, pageProps }: AppProps) {
         />
       </Head>
       <ThemeProvider theme={theme}>
-        <WalletProviderContext>
-          <CssBaseline enableColorScheme />
-          <Layout>
-            <Component {...pageProps} />
-          </Layout>
-        </WalletProviderContext>
+        <CssBaseline enableColorScheme />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </ThemeProvider>
     </AppCacheProvider>
   );
