@@ -4,7 +4,7 @@
 
 SOL DISCOVERY is a Solana explorer/dashboard application developed for the [Solana Talent Olympics Summer 2024](https://earn.superteam.fun/talent-olympics/) - Tooling Data Explorer/Dashboard category.
 
-It allows you to search and analyse important Solana data, such as transaction, account, and block information in detail. Additionally, it supports connections to both Mainnet Beta and Devnet. Alchemy and Helius APIs are used for the necessary data.
+It allows you to search and analyse important Solana data, such as transaction, network, account, and block information in detail. Additionally, it supports connections to both Mainnet Beta and Devnet. Alchemy and Helius APIs are used for the necessary data.
 
 Screenshots of the pages in the project are attached at the bottom of this document.
 
@@ -26,3 +26,11 @@ If you want to build the project and run the built version, use the `npm run bui
 * Next.js
 * TypeScript
 * Material UI
+
+![](readme-images/dashboard-page.png)
+
+![](readme-images/transaction-page.png)
+
+![](readme-images/account-page.png)
+
+![](readme-images/block-page.png)
