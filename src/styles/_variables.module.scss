@@ -1,0 +1,45 @@
+$primary-main: #66b3ff;
+$secondary-main: #03dac6;
+$background-default: #101214;
+$background-paper: #10161d;
+$error-main: #cf6679;
+$info-main: #f4b400;
+$warning-main: #2196f3;
+$success-main: #03c599;
+$text-primary: #ffffff;
+$text-secondary: #b0bec5;
+$text-disabled: #757575;
+$divider: #1d2126;
+$std-white: #ffffff;
+$std-black: #000000;
+$link-blue: #1e90ff;
+$link-bg-yellow: #eab308;
+$inner-card-bg: #1e2630;
+$grid-bg: #1c2228;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 600;
+
+:export {
+  primary-main: $primary-main;
+  secondary-main: $secondary-main;
+  background-default: $background-default;
+  background-paper: $background-paper;
+  error-main: $error-main;
+  info-main: $info-main;
+  warning-main: $warning-main;
+  success-main: $success-main;
+  text-primary: $text-primary;
+  text-secondary: $text-secondary;
+  text-disabled: $text-disabled;
+  divider: $divider;
+  std-white: $std-white;
+  std-black: $std-black;
+  link-blue: $link-blue;
+  link-bg-yellow: $link-bg-yellow;
+  inner-card-bg: $inner-card-bg;
+  grid-bg: $grid-bg;
+  font-weight-regular: $font-weight-regular;
+  font-weight-medium: $font-weight-medium;
+  font-weight-bold: $font-weight-bold;
+}

@@ -1,0 +1,114 @@
+@use "./variables.module";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.headerContainer {
+  background-image: url("../../public/assets/linear-bg-header.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.clickableText {
+  color: variables.$link-blue !important;
+  cursor: pointer;
+  border-radius: 3px;
+  width: fit-content;
+
+  &:hover {
+    background-color: variables.$link-bg-yellow;
+  }
+
+  a {
+    text-decoration: none !important;
+  }
+}
+
+.MuiDataGrid-root {
+  background-color: variables.$grid-bg !important;
+
+  .MuiDataGrid-columnHeaders > div {
+    background-color: variables.$grid-bg !important;
+
+    .MuiDataGrid-columnHeader {
+      cursor: default;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .MuiDataGrid-cell {
+    display: flex;
+    align-items: center;
+  }
+
+  .signatureCell .MuiTypography-body2 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 290px;
+  }
+
+  .MuiDataGrid-overlayWrapper {
+    min-height: 50px;
+  }
+}
+
+.searchBarContainer {
+  .filterDropdown {
+    border-top-right-radius: 0;
+  }
+
+  .searchInput {
+    border-top-left-radius: 0;
+  }
+}
+
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: variables.$success-main;
+  position: fixed;
+  z-index: 1110;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+}
+
+#nprogress .peg {
+  display: block;
+  position: absolute;
+  right: 0px;
+  width: 100px;
+  height: 100%;
+  box-shadow: 0 0 10px variables.$success-main, 0 0 5px variables.$success-main;
+  opacity: 1;
+  transform: rotate(3deg) translate(0px, -4px);
+}
