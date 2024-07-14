@@ -33,7 +33,7 @@ const MainCard = ({
     result: { value },
   } = account;
   const owner = value?.owner;
-  const balance = value?.lamports;
+  const balance = value?.lamports || 0;
   const executable = value?.executable;
   const totalTokens = fungibleTokensLength + nftsLength;
 
@@ -237,3 +237,4 @@ const MainCard = ({
   );
 };
 export default MainCard;
+
