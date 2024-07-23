@@ -1,6 +1,6 @@
 # SOL DISCOVERY
 
-## [Live link of the project](https://sol-discovery-app.vercel.app/)
+## [Live link of the project](https://sol-discovery-app.vercel.app/?cluster=devnet)
 
 SOL DISCOVERY is a Solana explorer/dashboard application developed for the [Solana Talent Olympics Summer 2024](https://earn.superteam.fun/talent-olympics/) - Tooling Data Explorer/Dashboard category.
 
